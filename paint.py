@@ -36,9 +36,16 @@ def square(start, end):
     end_fill()
 
 
-def circle(start, end):
-    """Draw circle from start to end."""
-    pass  # TODO
+
+def draw_circle(start, end): #Había una colisiòn de nombres, por eso lo cambie a draw_cricle, pero funciona - Marce
+    """Draw circle from start to end."""    
+    up()
+    radius = abs(end.x - start.x) / 2
+    goto((start.x + end.x) / 2, (start.y + end.y) / 2 - radius)
+    down()
+    begin_fill()
+    circle(radius)
+    end_fill()
 
 
 def rectangle(start, end):
@@ -79,9 +86,10 @@ onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
+onkey(lambda: color('pink'), 'P') #Nuevo color - Marce
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
-onkey(lambda: store('shape', circle), 'c')
+onkey(lambda: store('shape', draw_circle), 'c') #Se aplica el nuevo nombre de la función - Marce
 onkey(lambda: store('shape', rectangle), 'r')
 onkey(lambda: store('shape', triangle), 't')
 done()
