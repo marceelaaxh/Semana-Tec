@@ -1,0 +1,70 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Node.js dependencies
+node_modules/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Java build output
+bin/
+target/
+
+# Ruby
+*.gem
+/.bundle/
+log/
+tmp/
+
+# JavaScript (React, Vue, etc.)
+*.env
+*.lock
+*.cache
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Operating system-specific files
+*.swp
+*.swo
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# macOS Finder metadata
+.AppleDouble
+.LSOverride
+
+# Windows thumbnails
+Thumbs.db
+ehthumbs.db
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Compiled binary files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Backup files
+*~ 
+*.bak
+*.tmp
+*.swp

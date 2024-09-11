@@ -50,12 +50,37 @@ def draw_circle(start, end): #Había una colisiòn de nombres, por eso lo cambie
 
 def rectangle(start, end):
     """Draw rectangle from start to end."""
-    pass  # TODO
+    up()
+    
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    
+    for _ in range(2):
+        forward(end.x - start.x)  
+        left(90)
+        forward(end.y - start.y)  
+        left(90)
 
 
 def triangle(start, end):
     """Draw triangle from start to end."""
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    
+    begin_fill()
+    x1, y1 = start.x, start.y
+    x2, y2 = end.x, start.y
+    x3, y3 = (start.x + end.x) / 2, end.y
+
+    
+    goto(x2, y2) 
+    goto(x3, y3)  
+    goto(x1, y1)  
+    end_fill()
 
 
 def tap(x, y):
