@@ -9,6 +9,7 @@ Se completó la funcionalidad para dibujar un círculo. La función que antes es
 El círculo se dibuja basado en las coordenadas de inicio y fin proporcionadas por el usuario.
 
 Por Tavera:
+
 Dibujar un Rectángulo:
 Se completó la funcionalidad para dibujar rectángulos. La figura se dibuja utilizando las coordenadas iniciales y finales, formando un rectángulo en la pantalla.
 
